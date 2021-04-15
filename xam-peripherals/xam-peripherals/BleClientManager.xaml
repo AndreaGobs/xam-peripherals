@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xam_peripherals.BleClientManager">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <StackLayout Orientation="Horizontal">
+                <Switch IsToggled="{Binding ToggleStatus}" HorizontalOptions="StartAndExpand"/>
+                <Label Text="{Binding ToggleText}" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Label Text="{Binding ClientStatus}" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Send packet" IsEnabled="{Binding SendPacketEnabled}" Clicked="SendPacketToServer" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Send packet sequence" IsEnabled="{Binding SendSequenceEnabled}" Clicked="SendSequenceToServer" HorizontalOptions="Center" HeightRequest="64"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xam_peripherals.SignalRClientManager">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="SignalR client manager" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="BaseUrl" Text="http://" Placeholder="Hub Url" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Entry x:Name="HubName" Text="testhub" Placeholder="Hub Name" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Entry x:Name="Email" Placeholder="Email" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Entry x:Name="Password" Placeholder="Password" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Button Text="Connect to Hub" Clicked="ConnectToHub" HorizontalOptions="Center" HeightRequest="64"/>
+            <Entry x:Name="MessagePart1" Placeholder="Part 1" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Entry x:Name="MessagePart2" Placeholder="Part 2" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Button Text="Send message to Hub" Clicked="SendToHub" HorizontalOptions="Center" HeightRequest="64"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

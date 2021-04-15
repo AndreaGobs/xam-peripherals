@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xam_peripherals.SocketClientManager">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Socket client manager" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Send packet" Clicked="SendPacketToServer" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Connect to AP" Clicked="ConnectToCustonWifi" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Disconnect AP" Clicked="DisconnectCustonWifi" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Test AP" Clicked="TestCustonWifi" HorizontalOptions="Center" HeightRequest="64"/>
+            <Entry x:Name="WifiSsidEntry" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Entry x:Name="WifiPwEntry" HorizontalOptions="Fill" MaxLength="32" HeightRequest="64"/>
+            <Label Text="{Binding StatusText}" MaxLines="5" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xam_peripherals.MainPage">
+    <StackLayout Spacing="30" Padding="20">
+        <StackLayout Spacing="0">
+            <Button Text="Ble server" Clicked="ButtonBleServerClicked" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Ble client" Clicked="ButtonBleClientClicked" HorizontalOptions="Center" HeightRequest="64"/>
+        </StackLayout>
+        <StackLayout Spacing="0">
+            <Button Text="Socket server" Clicked="ButtonSocketServerClicked" HorizontalOptions="Center" HeightRequest="64"/>
+            <Button Text="Socket client" Clicked="ButtonSocketClientClicked" HorizontalOptions="Center" HeightRequest="64"/>
+        </StackLayout>
+        <StackLayout Spacing="0">
+            <Button Text="SignalR client" Clicked="ButtonSignalRClientClicked" HorizontalOptions="Center" HeightRequest="64"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
